@@ -22,6 +22,18 @@ $(window).on("load", function(){
 })
 
 $(document).ready(function(){
+    // fixed header 
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $(".header").addClass("fixed");
+
+        }
+        else{
+            $(".header").removeClass("fixed");
+        }
+    })
+
+
     // People filter 
     peopleFilter($(".filter-btn.active").attr("data-target"))
     $(".filter-btn").click(function(){
