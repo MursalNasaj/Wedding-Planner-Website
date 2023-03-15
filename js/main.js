@@ -1,6 +1,8 @@
 
 
 $(window).on("load", function(){
+   // preloader
+   $(".preloader").fadeOut(600); 
 
     // home section slideShow 
     let slideIndex =$(".slide.active").index();

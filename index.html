@@ -11,10 +11,24 @@
   <script src="https://kit.fontawesome.com/ed42b3f4d1.js" crossorigin="anonymous"></script>
   <!-- responsive css  -->
   <link rel="stylesheet"  type="text/css"  href="css/responsive.css">
+  <!-- Theme setting  -->
+  <link rel="stylesheet" type="text/css" href="css/setting.css">
   <!-- default skin -->
-  <link rel="stylesheet" class="alternate-style" type="text/css" href="css/skins/pink.css">
+  <link rel="stylesheet" class="alternate-style" type="text/css"  href="css/skins/pink.css">
+  <link rel="stylesheet" class="alternate-style" type="text/css"  href="css/skins/light-green.css">
+  <link rel="stylesheet" class="alternate-style" type="text/css"  href="css/skins/light-blue.css">
+  <link rel="stylesheet" class="alternate-style" type="text/css"  href="css/skins/yellow.css">
+  <link rel="stylesheet" class="alternate-style" type="text/css"  href="css/skins/red.css">
 </head>
 <body>
+
+  <!-- preloader start  -->
+  <div class="preloader">
+    <div class="loader">
+      <i class="fas fa-heart"></i>
+    </div>
+  </div>
+  <!-- preloader end  -->
 <!-- header  -->
 <header class="header">
   <div class="container">
@@ -621,6 +635,27 @@
 <p class="copyright-text">copyright &copy; 2023 Nasaj</p>
 <!-- copyright end  -->
 
+<!-- Theme setting start   -->
+<div class="setting">
+  <div class="s-toggle-btn">
+    <i class="fas fa-cog fa-spin"></i>
+  </div>
+  <h4>Theme Colors</h4>
+  <div class="colors"></div>
+  <!-- light dark mode  -->
+  <h4>Theme Mode</h4>
+  <label >
+    <input type="radio" name="ld" value="light" class="theme-mode" checked>
+    Light
+  </label>
+  <label >
+    <input type="radio" name="ld" value="dark" class="theme-mode">
+    Dark
+  </label>
+</div>
+
+<!-- Theme setting end  -->
+
 
 
 
@@ -629,6 +664,7 @@
 <script src="./js/jquery.min.js"></script>
 <script src="./js/scrollIt.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/setting.js"></script>
 </body>
 </html>
 
