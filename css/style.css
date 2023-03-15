@@ -1082,5 +1082,32 @@ body.dark .header.fixed{
     }
 }
 
+/* audio  */
+.fa-music{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    color: transparent;
+    z-index: 1;
+    cursor: pointer;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #444444;
+    text-shadow: 0 0 1px #444444;
+}
+
+.fa-music.pause::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    transform: rotate(-36deg);
+}
+
 
 
